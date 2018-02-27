@@ -8,6 +8,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+// 连接数据库
+var mongoose = require('mongoose');
+// 一定要首先先启动数据库
+mongoose.connect('mongodb://localhost/h51725');
+
 var app = express();
 
 // view engine setup
