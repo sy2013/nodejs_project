@@ -1,8 +1,132 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration:none;color:#353334;}
+img{border:0;display: block;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+body{font-size:12px;font-family:"微软雅黑";}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
 
-a {
-  color: #00B7FF;
+#iframeTop{  
+            width: 100%;  
+            height:118px;
+            background: #fdd;  
+        }  
+        #iframeLeft{  
+            width: 15%;  
+            height: 100%; 
+            float: left;
+            background: #0f0;    
+        }  
+        #iframeContent{  
+            width:85%;  
+            height: 100%; 
+             background: #ff0;                 
+        }  
+
+#top{
+	width:100%;
+	height:75px;
+    background:#303030;
+    position: absolute;
+    top:0;
+    left:0
+}
+.logo{
+	float:left;
+	margin: 20px 0 0 30px;
+}
+.top_list_a{
+	float:left;
+    height: 67px;
+    text-align: center;
+    margin-left:150px;
+}
+.top_list_a a{
+	float:left;
+	color:#fff;
+	display: block;
+	width: 82px;
+	height:67px;
+	padding-top:8px;
+	text-align: center;
+}
+.top_list_a a:nth-child(1){
+	width: 102px;
+}
+.top_list_a a:nth-child(1) span{
+	color: #ff0;
+	font-weight: 900;
+}
+.top_list_a a:hover{
+	background: #404040;
+}
+.top_list_a a img{
+	display: block;
+	margin: auto;
+	height: 35px;
+}
+.top_list_a a span{
+	margin-top:6px;
+	display: block;
+	font-size: 13px;
+}
+/*--------nav----------*/
+#nav{
+	background: #575757;
+    height: 41px;
+    width: 100%;
+    border-bottom: 1px solid #212121;
+    position: absolute;
+    top:75px;
+    left:0;
+}
+.nav_ul{
+	margin-left:30px;
+}
+.nav_ul li{
+   float: left;
+   height: 41px;
+   line-height: 41px;
+   position: relative;	
+}
+.nav_ul li:hover{
+	background: #192E32;
+}
+.nav_ul li .border_L{
+	height: 13px;
+    width: 0px;
+    border-right: 1px solid #656565;
+    margin-top: 15px;
+    _margin-top: 0px;
+    border-left: 1px solid #303030;
+    display: inline-block;
+}
+.nav_ul li a{
+	float: LEFT;
+    color: #FFF;
+    padding: 0px 12px;
+    display: block;
+}
+.nav_ul li a img{
+	border: none;
+    width: 17px;
+    height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+.num{
+	width: 32px;
+    height: 16px;
+    background: url(http://www.doudoufei.top/shops/admin/images/index-11_22.png) no-repeat scroll;
+    display: inline-block;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+    margin-left:10px;
 }

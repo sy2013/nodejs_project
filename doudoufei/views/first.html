@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration:none;color:#353334;}
+img{border:0;display: block;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+body{font-size:12px;font-family:"微软雅黑";}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
+#main_right{	
+	background: url(http://www.doudoufei.top/shops/admin/images/body_bj.jpg);
+    height:100%; 
+    width:100%;
+    min-width: 773px;
+    /*margin-left:195px;*/
+    /*padding: 10px;*/
+   /* overflow-y:scroll ;*/
+}
+#con{
+	padding: 10px;
+}
+.con_h1{
+	margin-left: 10px;
+	border-bottom: 1px solid #ccc;
+    color: #333;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+   color: #4c4c4c;
+    font-size: 18px;
+}
+.con_h1:hover{
+	color:#EB8A3D;
+	text-decoration: underline;
+}
+.con_p{
+	padding: 0 10px 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #CC0000;
+
+}
+.con_p a{
+	color:#335B64;
+}
+.con_p a:hover{
+	color:#EB8A3D;
+	text-decoration: underline;
+}
+.con_img{
+	width:100%;
+}
+.con_img li{
+	min-width:167px;
+	width:22%;
+	height: 60px;
+	padding: 10px 20px 10px 0;
+    position: relative;
+    background:#27a9e3;
+    margin-right:1%;
+    float:left;
+}
+.con_img li:nth-child(2){
+	background:#28b779;
+}
+.con_img li:nth-child(3){
+	background:#852b99;
+}
+.con_img li:nth-child(4){
+	background:#ffb848;
+}
+.con_box img{
+	position: absolute;
+    top: 10px;
+    left: 20px;
+    border: none;
+}
+.con_box h2{
+	font-size: 14px;
+    font-weight: 100;
+    font-family: "微软雅黑";
+    color: #fff;
+    padding: 7px 0 0 5px ;
+    text-align: right;
+}
+.con_box p{
+	font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+}
+.detail_list{
+	margin-top:15px;
+}
+.detail_list_ul{
+}
+.detail_list_ul li{
+	border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    height: 60px;
+    width:15.2%;
+    float:left;
+    margin-right: 1%;
+    margin-top:15px ;
+    background: #fff url(http://www.doudoufei.top/shops/admin/images/bj02.jpg) 0 bottom repeat-x;
+    min-width: 156px;
+    display: inline-block;
+    vertical-align: top;
+    height: 62px;
+}
+.img_div{
+	float: left;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    border-right:1px solid #e2e2e2;
+}
+.img_div img{
+	width: 30px;
+    height: auto;
+    margin: 26% auto 0;
+}
+.text{
+	padding: 10px 0 0 15px;
+    float: left;
+}
+.text h2{
+	font-size: 12px;
+    font-weight: 100;
+    font-family: "微软雅黑";
+    color: #6a6a6a;
+}
+.text p{
+	font-size: 24px;
+    font-weight: 700;
+}
+.text p:hover{
+	color:#ff3f3f;
+}
+#div_list{
+	width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.order_list{
+	padding: 30px 30px 0;
+	border: 1px solid #d4d4d4;
+    background: #fff;
+    margin-top: 15px;
+    padding: 30px 80px 0;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+}
+.order_list_p{
+    margin: -1px 0 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.order_chart_div{
+	height: 400px;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+.order_chart_div_1{
+	eight: 400px;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+
+	</style>
+	<body>
+		<div id="main_right">
+	     		 <div id="con">
+	     		 	<p class="con_h1">ECSHOP管理中心</p>
+	     		 	<p class="con_p">no_license<a>点击查看</a></p>
+	     		 	<div class="img_list">	     		 		
+		     		 	<ul class="con_img">
+		     		 		<li>
+		     		 			<div class="con_box">
+		     		 				<img src="http://www.doudoufei.top/shops/admin/images/icon01.png" alt="" />
+		     		 				<h2>今日销售总额</h2>
+		     		 				<p>0.00</p>
+		     		 			</div>
+		     		 		</li>
+		     		 		<li>
+		     		 			<div class="con_box">
+		     		 				<img src="http://www.doudoufei.top/shops/admin/images/icon02.png" alt="" />
+		     		 				<h2>今日销售总额</h2>
+		     		 				<p>0</p>
+		     		 			</div>
+		     		 		</li>
+		     		 		<li>
+		     		 			<div class="con_box">
+		     		 				<img src="http://www.doudoufei.top/shops/admin/images/icon03.png" alt="" />
+		     		 				<h2>今日销售总额</h2>
+		     		 				<p>0</p>
+		     		 			</div>
+		     		 		</li>
+		     		 		<li>
+		     		 			<div class="con_box">
+		     		 				<img src="http://www.doudoufei.top/shops/admin/images/icon04.png" alt="" />
+		     		 				<h2>今日销售总额</h2>
+		     		 				<p>83</p>
+		     		 			</div>
+		     		 		</li>
+		     		 	</ul>
+		     		 	<div class="detail_list">
+		     		 		<ul class="detail_list_ul">
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-weiqueren.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>未确认订货</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-daizhifu.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>待支付订货</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-daifahuo.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>待发货订货</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-iconsvggyiwancheng18.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>已成交订单数</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-dengji.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>新缺货登记</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-yifahuo.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>部分发货订单</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>
+		     		 			<li class="detail_list_1">
+		     		 				<div class="img_div">		     		 					
+			     		 				<img src="http://www.doudoufei.top/shops/admin/images/iconfont-iconfeature.png"/>
+		     		 				</div>
+		     		 				<div class="text">
+		     		 					<h2>退款申请</h2>
+		     		 					<p>0</p>
+		     		 				</div>
+		     		 			</li>			
+		     		 		</ul>
+		     		 	</div>
+	     		 	</div>
+	     		 	<div id="div_list">
+	     		 		<div class="order_list">
+	     		 			<p class="order_list_p">02月订单统计</p>
+	     		 			<div class="order_chart_div">
+	     		 				<div class="order_chart_div_1">
+	     		 					
+	     		 				</div>
+	     		 			</div>
+	     		 		</div>
+	     		 	</div>
+	     		 </div> 
+	     	</div>
+	</body>
+</html>

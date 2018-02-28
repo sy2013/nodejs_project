@@ -3,7 +3,7 @@
 *{margin:0;padding:0;}
 ul,li,ol{list-style:none;}
 a{text-decoration:none;color:#353334;}
-img{border:0;display: block;}
+img{border:0;}
 h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal;}
 i,em{font-style:normal;}
 body{font-size:12px;font-family:"微软雅黑";}
@@ -12,6 +12,9 @@ body{font-size:12px;font-family:"微软雅黑";}
 .clear{clear:both;height:0;overflow:hidden;}
 html,body{
 	height: 100%;
+}
+body{
+	/*overflow: hidden;*/
 }
 /*--------header----------*/
 #header{
@@ -26,6 +29,9 @@ html,body{
 	width:100%;
 	height:75px;
     background:#303030;
+    position: absolute;
+    top:0;
+    left:0
 }
 .logo{
 	float:left;
@@ -72,7 +78,9 @@ html,body{
     height: 41px;
     width: 100%;
     border-bottom: 1px solid #212121;
-    
+    position: absolute;
+    top:75px;
+    left:0;
 }
 .nav_ul{
 	margin-left:30px;
@@ -123,7 +131,7 @@ html,body{
 #main{
 	width:100%;
 	position: absolute;
-	top:118px;
+	top:117px;
 	bottom:0;
 }
 /*-------main_left-----*/
@@ -210,98 +218,3 @@ html,body{
 	
 }
 /*-----------main_right-----------*/
-#main_right{	
-	background: url(http://www.doudoufei.top/shops/admin/images/body_bj.jpg);
-    height: 100%; 
-    min-width: 773px;
-    margin-left:195px;
-   /* padding: 10px;*/
-}
-#con{
-	padding: 10px;
-}
-.con_h1{
-	margin-left: 10px;
-	border-bottom: 1px solid #ccc;
-    color: #333;
-    padding: 7px 10px;
-    margin: 0 0 10px 0;
-    overflow: hidden;
-   color: #4c4c4c;
-    font-size: 18px;
-}
-.con_h1:hover{
-	color:#EB8A3D;
-	text-decoration: underline;
-}
-.con_p{
-	padding: 0 10px 10px;
-    border-bottom: 1px solid #333;
-    margin-bottom: 10px;
-    position: relative;
-    font-size: 15px;
-    color: #CC0000;
-
-}
-.con_p a{
-	color:#335B64;
-}
-.con_p a:hover{
-	color:#EB8A3D;
-	text-decoration: underline;
-}
-.con_img{
-	width:100%;
-}
-.con_img li{
-	min-width:167px;
-	width:22%;
-	height: 60px;
-	padding: 10px 20px 10px 0;
-    position: relative;
-    background:#27a9e3;
-    margin-right:1%;
-    float:left;
-}
-.con_img li:nth-child(2){
-	background:#28b779;
-}
-.con_img li:nth-child(3){
-	background:#852b99;
-}
-.con_img li:nth-child(4){
-	background:#ffb848;
-}
-.con_box img{
-	position: absolute;
-    top: 10px;
-    left: 20px;
-    border: none;
-}
-.con_box h2{
-	font-size: 14px;
-    font-weight: 100;
-    font-family: "微软雅黑";
-    color: #fff;
-    padding: 7px 0 5px;
-    text-align: right;
-}
-.con_box p{
-	font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-    text-align: right;
-}
-.detail_list{
-	margin-top:15px;
-}
-.detail_list_ul{
-}
-.detail_list_ul li{
-	border: 1px solid #d4d4d4;
-    border-radius: 3px;
-    height: 60px;
-    width:15.2%;
-    float:left;
-    margin-right: 1%;
-}
