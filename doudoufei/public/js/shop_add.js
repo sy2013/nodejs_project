@@ -1,7 +1,8 @@
 window.onload = function(){
 	 $(".tabBar_p li").click(function(){
+	 	var index = $(this).index();
 		$(this).css("background","#fefefe").siblings().css("background","#efefef");
-		$("form table").eq( $(this).index()).css("display","block").substring().css("display","none");
+		$("table").eq( index).css("display","block").siblings().css("display","none");
 	});
 	
 }

@@ -19,7 +19,6 @@ body{font-size:12px;font-family:"微软雅黑";}
     height:100%; 
     width:100%;
     min-width: 773px;
-    overflow-y:scroll;  
 }
 .con{
 	padding:10px;
@@ -113,10 +112,13 @@ body{font-size:12px;font-family:"微软雅黑";}
     background: #fefefe;
 }
 table{
-	display: block;
+	display:none;
     border-collapse: separate;
     border-spacing: 2px;
     border-color: grey;
+}
+.blo{
+	display: block;
 }
 
 .notice-span {
@@ -655,5 +657,26 @@ em, cite, th {
     border-color: initial;
     border-image: initial;
     background: rgb(255, 63, 63);
+    border-radius: 3px;
+}
+#footer{
+	background: #f3f3f3 url(../images/th_bg.gif) repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+}
+.button-div{
+	text-align: center;
+    padding: 3px 0;
+}
+.button{
+	padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
     border-radius: 3px;
 }

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../public/stylesheets/shop_add.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="../public/js/shop_add.js">
+		</script>
+
+	</head>
+	<body>
+		<div class="main_right">
+			<div class="con">
+				<h1>
+		     	  	  	<span class="active_span1">ECSHOP 管理中心</span>
+		     	  	  	<span class="active_span2"> - 添加新商品 </span>
+		     	  	  	<span class="active_span3"><img src="http://www.doudoufei.top/shops/admin/images/jnsy.png" alt="" /></span>
+		     	  	  	<span class="active_span4"><a href="" >商品列表</a></span>
+		     	  	  </h1>
+				<div class="tab_div">
+					<div class="tabBar">
+						<ul class="tabBar_p">
+							<li class="tab_front p_span" id="general-tab">通用信息</li>
+							<li class="tab_back p_span" id="tab_span1detail-tab">描述信息</li>
+							<li class="tab_back p_span" id="mix-tab">其他信息</li>
+							<li class="tab_back p_span" id="properties-tab">商品属性</li>
+							<li class="tab_back p_span" id="gallery-tab">商品相册</li>
+							<li class="tab_back p_span" id="linkgoods-tab">关联商品</li>
+							<li class="tab_back p_span" id="groupgoods-tab">配件</li>
+							<li class="tab_back p_span" id="article-tab"></li>
+						</ul>
+					</div>
+					<div class="tabBody">
+						<form id="fir" action="/api/add_good" method="post" enctype="multipart/form-data">
+							<table class="blo">
+								<tr>
+									<td class="label">商品名称：</td>
+									<td><input type="text" style="float:left;color:;" size="30" />
+										<div style="background-color:;float:left;margin:10px 0 0 5px;">
+											<img src="http://www.doudoufei.top/shops/admin/images/color_selecter.gif" style="margin-top:-1px;"/>
+										</div>
+										<select name="goods_name_style">
+											<option value="">字体样式</option>
+											<option value="strong">加粗</option>
+											<option value="em">斜体</option>
+											<option value="u">下划线</option>
+											<option value="strike">删除线</option>
+										</select>
+										<span class="require-field">*</span></td>
+								</tr>
+								<tr>
+									<td class="label">
+										<a href="" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a> 
+										商品货号： 
+									</td>
+									<td>
+										<input type="text" size="20"/>
+										<span id="goods_sn_notice"></span><br />
+										<span class="notice-span" style="display:block">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">商品分类：</td>
+									<td>
+										<select name="cat_id" >
+											<option value="0">请选择...</option>
+											<option value="132">钻石</option>
+											<option value="190">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option>
+											<option value="193">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短袖衬衫</option>
+											<option value="194">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长袖衬衫</option>
+											<option value="170">&nbsp;&nbsp;&nbsp;&nbsp;裤子</option>						
+											<option value="639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;裤装</option>
+										</select>
+										<a href="j" title="添加分类" class="special">添加分类</a>
+										<span id="category_add" style="display:none;">
+							               <input class="text" size="10"/>
+							               <a href="" title=" 确定 " class="special" > 确定 </a>
+							               <a href="" title="分类管理" class="special" >分类管理</a>
+							               <a href="" title="隐藏" class="special" >&gt;&gt;</a>
+						               </span>
+										<span class="require-field">*</span> </td>
+								</tr>
+								<tr>
+									<td class="label">扩展分类：</td>
+									<td>
+										<input type="button" value="添加" class="button" />
+									</td>
+								</tr>
+								<tr>
+									<td class="label">商品品牌：</td>
+									<td>
+										<select name="brand_id" >
+											<option value="0">请选择...
+												<option value="45">gr</option>
+												<option value="33">空间大师</option>
+												<option value="32">溢彩年华</option>
+												<option value="31">EVENY</option>
+												<option value="30">圣迪奥</option>
+												<option value="29">韩都衣舍</option>
+												<option value="28">betu百图</option>
+												<option value="27">艾夫斯</option>
+												<option value="1">有讯网络</option>
+										</select>
+										<a href="" title="添加品牌"  class="special">添加品牌</a>
+										<span id="brand_add" style="display:none;">
+								              <input class="text" size="15" />
+								               <a href="" class="special" > 确定 </a>
+								               <a href=""  title="品牌管理" class="special" >品牌管理</a>
+								               <a href=""  title="隐藏" class="special" >&gt;&gt;</a>
+						               </span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">本店售价：</td>
+									<td>
+										<input type="text" id="good_price" name="shop_price" value="0" size="20" />
+										<input type="button" value="按市场价计算" />
+										<span class="require-field">*</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<a href="" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a>
+										会员价格：
+									</td>
+									<td>
+										注册用户<span></span>
+										<input type="text" id="rank_1"  value="-1"  />
+										<input type="hidden"  value="1" /> 代销用户
+										<span id="nrank_3"></span> 
+										<input type="text" id="rank_3"  value="-1"  />
+										<input type="hidden" value="3" /> vip
+										<span id="nrank_2"></span>
+										<input type="text" id="rank_2"  value="-1"  />
+										<input type="hidden"  value="2" />
+										<br />
+										<span class="notice-span" style="display:block" id="noticeUserPrice">会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</span>
+									</td>
+								</tr>
+
+								<!--鍟嗗搧浼樻儬浠锋牸-->
+								<tr>
+									<td class="label">
+										<a href="" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a>
+										商品优惠价格：
+									</td>
+									<td>
+										<table width="100%" id="tbody-volume" align="center">
+											<tr>
+												<td>
+													<a href="">[+]</a>
+													优惠数量 <input type="text" size="8" value="" class="input02" /> 优惠价格 
+													<input type="text" size="8" value="" class="input02" />
+												</td>
+											</tr>
+										</table>
+										<span class="notice-span" style="display:block" id="volumePrice">购买数量达到优惠数量时享受的优惠价格</span>
+									</td>
+								</tr>
+								<!--鍟嗗搧浼樻儬浠锋牸 end -->
+
+								<tr>
+									<td class="label">市场售价：</td>
+									<td><input type="text"value="0" size="20" />
+										<input type="button" value="取整数" />
+									</td>
+								</tr>
+								<tr>
+									<td class="label">虚拟销量：</td>
+									<td><input type="text"  value="0" size="20" />
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<a href="" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a> 
+										赠送消费积分数：
+									</td>
+									<td><input type="text" 
+										 value="-1" size="20" />
+										<br />
+										<span class="notice-span" style="display:block" id="giveIntegral">购买该商品时赠送消费积分数,-1表示按商品价格赠送</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<a href="
+											" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a> 
+										赠送等级积分数：
+									</td>
+									<td>
+										<input type="text"
+											value="-1" size="20" />
+										<br /><span class="notice-span" style="display:block" id="rankIntegral">购买该商品时赠送等级积分数,-1表示按商品价格赠送</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<a href="" title="点击此处查看提示信息">
+											<img src="http://www.doudoufei.top/shops/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息">
+										</a>
+										 积分购买金额：
+									</td>
+									<td>
+										<input type="text" value="0" size="20" />
+										<br />
+										<span class="notice-span" style="display:block" id="noticPoints">(此处需填写金额)购买该商品时最多可以使用积分的金额</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<label for="is_promote">
+											<input type="checkbox" id="is_promote" name="is_promote" value="1" 
+											/> 促销价：
+										</label>
+									</td>
+									<td id="promote_3">
+										<input type="text" id="promote_1" value="0" size="20" />
+									</td>
+								</tr>
+								<tr id="promote_4">
+									<td class="label" id="promote_5">促销日期：</td>
+									<td id="promote_6">
+										<input  type="text" id="promote_start_date" size="12" value='2018-02-28' readonly="readonly" />
+										<input name="selbtn1" type="button" id="selbtn1"  />
+										<input name="selbtn2" type="button" id="selbtn2" onclick="return showCalendar('promote_end_date', '%Y-%m-%d', false, false, 'selbtn2');" value="选择" class="button" />
+									</td>
+								</tr>
+								<tr>
+									<td class="label">上传商品图片：</td>
+									<td>
+										<input type="file" size="35" />
+										<img src="http://www.doudoufei.top/shops/admin/images/no.gif" />
+										<br />
+										<input type="text" size="40" value="商品图片外部URL" style="color:#aaa;" />											 
+									</td>
+								</tr>
+								<tr id="auto_thumb_1">
+									<td class="label"> 上传商品缩略图：</td>
+									<td id="auto_thumb_3">
+										<input type="file" id="goods_thumb" size="35" />
+										<img src="http://www.doudoufei.top/shops/admin/images/no.gif" />
+										<br />
+										<input type="text" size="40" value="商品缩略图外部URL" style="color:#aaa;" />
+										<br />
+										<label for="auto_thumb"><input type="checkbox" id="auto_thumb" name="auto_thumb" checked="true" value="1"/>自动生成商品缩略图</label>
+									</td>
+								</tr>
+							</table>
+                             <div class="button-div" style="display: block;">
+						          <input type="hidden" name="goods_id" value="0" />
+						          <input type="button" value=" 确定 " class="button" onclick="addGood()" />
+						          <input type="reset" value=" 重置 " class="button" />
+					        </div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				共执行 7 个查询，用时 0.022891 秒，Gzip 已禁用，内存占用 3.569 MB<br /> 版权所有 &copy; 2005-2018 上海商派软件有限公司，并保留所有权利。</div>
+
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	//jquery的ajax不支持文件上传
+	//用原生js 或表单进行文件上传（兼容性好）
+	function addGood() {
+		document.getElementById("fir").submit();
+		   location.href="/shop_list";
+
+		//		var ajax = new XMLHttpRequest();
+		//		ajax.open("post","/api/add_good");
+		//		ajax.onreadystatechange = function(res){
+		//			
+		//		}
+		//		var form = new FormData();
+		//		form.append("good_name",$("#good_name").val() );
+		//		form.append("good_price",$("#good_price").val() );
+		//		form.append("good_img", document.getElementById("good_img").files[0] );
+		//		ajax.send(form); //(form表单数据post传参)
+	}
+</script>

@@ -53,11 +53,16 @@
 			url:"/api/login",
 			type:"post",
 			data:{
-				uesrname : $("#username").val(),
+				username : $("#username").val(),
 				pwd : $("#pwd").val()
 			},
 			success : function(res){
 				console.log(res);
+				if( res.status == 1 ){					
+				   location.href ="/index2";					
+				}else{
+					console.log(res.message);
+				}
 			}
 			
 		})

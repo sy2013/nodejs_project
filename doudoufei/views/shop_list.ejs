@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/stylesheets/shop_list.css" />
+	</head>
+
+	<body>
+		<div class="main_right">
+			<div class="con">
+				<h1>
+		     	  	  	<span class="active_span1">ECSHOP 管理中心</span>
+		     	  	  	<span class="active_span2"> - 添加新商品 </span>
+		     	  	  	<span class="active_span3"><img src="http://www.doudoufei.top/shops/admin/images/jnsy.png" alt="" /></span>
+		     	  	  	<span class="active_span4"><a href="">添加新商品</a></span>
+		     	  	  </h1>
+				<form action="">
+					关键字
+					<input type="text" name="keyword" size="15" class="txt">
+					<input type="submit" value=" 搜索 " class="button">
+				</form>
+					<div class="list_div">
+						<table border="" cellspacing="1" cellpadding="3">
+							<tr>
+								<th>
+									<input  type="checkbox" />
+									<a href="">编号</a><img src="http://www.doudoufei.top/shops/admin/images/sort_desc.gif" /> </th>
+								<th>
+									<a href="">商品名称</a>
+								</th>
+								<th>
+									<a href="">货号</a>
+								</th>
+								<th>
+									<a href="">价格</a>
+								</th>
+								<th>
+									<a href="">上架</a>
+								</th>
+								<th>
+									<a href="">精品</a>
+								</th>
+								<th>
+									<a href="">新品</a>
+								</th>
+								<th>
+									<a href="">热销</a>
+								</th>
+								<th>
+									<a href="">推荐排序</a>
+								</th>
+								<th>
+									<a href="">库存</a>
+								</th>
+								<th>
+									<a href="">虚拟销量</a>
+								</th>
+								<th>操作</th>
+
+							</tr>
+							 <% for( var i=0,i<list.length,i++){ %>
+							 	 <tr>
+							 	 	 <td><input type="checkbox" name="checkboxes[]" value="282" />100</td>
+								    <td class="first-cell" style=""><span><%= list[i].good_name %></span></td>
+								    <td align="center"><span><%= list[i].good_code %></span></td>
+								    <td align="center"><span><%= list[i].good_price %></span></td>
+								    
+								    <td align="center"><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+								    <td align="center"><img src="http://www.doudoufei.top/shops/admin/images/no.gif" /></td>
+								    <td align="center"><img src="http://www.doudoufei.top/shops/admin/images/yes.gif"/></td>
+								    <td align="center"><img src="http://www.doudoufei.top/shops/admin/images/no.gif" /></td>
+								    <td align="center"><span>100</span></td>
+								    <td align="center"><span>100</span></td>
+								    <td align="center"><span>100</span></td>
+								    <td align="center">
+								      <a href="" title="查看"><img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif" width="21" height="21" border="0" /></a>
+								      <a href="" title="编辑"><img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif" width="21" height="21" border="0" /></a>
+								      <a href="" title="复制"><img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif" width="21" height="21" border="0" /></a>
+								      <a href="" title="回收站"><img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" width="21" height="21" border="0" /></a>
+								      <img src="http://www.doudoufei.top/shops/admin/images/empty.gif" width="21" height="21" border="0" />        
+								    </td>
+
+							 	 </tr>
+							 <% } %>
+						</table>
+
+					</div>
+
+			</div>
+			<div>
+
+			</div>
+			<div id="footer">
+				共执行 7 个查询，用时 0.022891 秒，Gzip 已禁用，内存占用 3.569 MB<br /> 版权所有 &copy; 2005-2018 上海商派软件有限公司，并保留所有权利。
+			</div>
+    </div>
+	</body>
+
+</html>

@@ -133,6 +133,7 @@ body{
 	position: absolute;
 	top:117px;
 	bottom:0;
+	overflow: hidden;
 }
 /*-------main_left-----*/
 #main_left{
@@ -201,11 +202,12 @@ body{
     color: #fff;
      width:100%;
 }
-.ul_none li{
+.ul_none .ul_none_1{
 	text-indent:0 ;
 	padding: 0;
+    border-top:0;
 }
-.ul_none li a{
+.ul_none .ul_none_1 a{
 	font-size:12px;
 	border: none;
     height: 30px;
