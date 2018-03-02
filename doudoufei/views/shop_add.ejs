@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="../public/stylesheets/shop_add.css" />
+		<link rel="stylesheet" href="/stylesheets/shop_add.css" />
 		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
 		</script>
-		<script type="text/javascript" src="../public/js/shop_add.js">
+		<script type="text/javascript" src="/js/shop_add.js">
 		</script>
 
 	</head>
@@ -38,7 +38,7 @@
 							<table class="blo">
 								<tr>
 									<td class="label">商品名称：</td>
-									<td><input type="text" style="float:left;color:;" size="30" />
+									<td><input type="text" style="float:left;color:;" size="30" name="goods_name"/>
 										<div style="background-color:;float:left;margin:10px 0 0 5px;">
 											<img src="http://www.doudoufei.top/shops/admin/images/color_selecter.gif" style="margin-top:-1px;"/>
 										</div>
@@ -59,7 +59,7 @@
 										商品货号： 
 									</td>
 									<td>
-										<input type="text" size="20"/>
+										<input type="text" size="20" name="goods_code"/>
 										<span id="goods_sn_notice"></span><br />
 										<span class="notice-span" style="display:block">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>
 									</td>
@@ -76,7 +76,7 @@
 											<option value="170">&nbsp;&nbsp;&nbsp;&nbsp;裤子</option>						
 											<option value="639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;裤装</option>
 										</select>
-										<a href="j" title="添加分类" class="special">添加分类</a>
+										<a href="" title="添加分类" class="special">添加分类</a>
 										<span id="category_add" style="display:none;">
 							               <input class="text" size="10"/>
 							               <a href="" title=" 确定 " class="special" > 确定 </a>
@@ -118,7 +118,7 @@
 								<tr>
 									<td class="label">本店售价：</td>
 									<td>
-										<input type="text" id="good_price" name="shop_price" value="0" size="20" />
+										<input type="text"  name="goods_price" value="0" size="20" />
 										<input type="button" value="按市场价计算" />
 										<span class="require-field">*</span>
 									</td>
@@ -295,4 +295,6 @@
 		//		form.append("good_img", document.getElementById("good_img").files[0] );
 		//		ajax.send(form); //(form表单数据post传参)
 	}
+	
+	
 </script>

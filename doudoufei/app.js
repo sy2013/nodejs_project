@@ -4,16 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require("express-session");
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+var app = express();
 // 连接数据库
 var mongoose = require('mongoose');
 // 一定要首先先启动数据库
 mongoose.connect('mongodb://localhost/h51725');
-
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +26,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// 这是官方文档写的设定，不好用!!!!!!!!
+// app.use(session({
+//   secret: 'keyboard cat',
+//   resave: false,
+//   saveUninitialized: true,
+//   cookie: { secure: true }
+// }))
+
+app.use(session({
+  resave: true, // don't save session if unmodified  
+  saveUninitialized: false, // don't create session until something stored  
+  secret: 'love'  
+}))
+
 
 app.use('/', index);
 app.use('/users', users);

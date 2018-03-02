@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 // 创建文档的定义
 var User = new Schema({
     username  : String,
-    pwd       : String,
+    psw       : String,
     create_date : { type: Date, default: Date.now }
 });
 
