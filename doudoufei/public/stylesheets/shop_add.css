@@ -187,10 +187,10 @@ input.btn-download{
   line-height: 41px;
   font-size: 16px;
   vertical-align: top;
-  background: url(../images/sprit.png) -70px -154px;
+  background: url(http://www.doudoufei.top/shops/admin/images/sprit.png) -70px -154px;
 }
 input.btn-download:hover{
-  background: url(../images/sprit.png) -70px -90px;
+  background: url(http://www.doudoufei.top/shops/admin/images/sprit.png) -70px -90px;
 }
 input.capital {
   text-transform: uppercase;
@@ -221,7 +221,7 @@ ul.msg-link {
 }
 
 ul.msg-link li {
-  background: url(../images/arrow.gif) no-repeat 0px 6px;
+  background: url(http://www.doudoufei.top/shops/admin/images/arrow.gif) no-repeat 0px 6px;
   padding-left:   18px;
   margin-left:  0;
 }
@@ -345,7 +345,7 @@ div#popMsg {
   line-height: 23px;
   color: #fff;
   font-size: 12px;
-  background: #D8D9DF url(../images/icon_title.gif) no-repeat 10px center;
+  background: #D8D9DF url(http://www.doudoufei.top/shops/admin/images/icon_title.gif) no-repeat 10px center;
   height: 23px;
   padding-left: 28px;
   margin: 0;
@@ -400,7 +400,7 @@ div#popMsg {
   bottom: 3px;
   width: 14px;
   height: 14px;
-  background:url(../images/btn_drop.gif) no-repeat center;
+  background:url(http://www.doudoufei.top/shops/admin/images/btn_drop.gif) no-repeat center;
 }
 
 .todolist-box .button
@@ -446,18 +446,18 @@ div#popMsg {
 }
 
 .step1 {
-  background:#FFF url(../images/stepnum.gif) no-repeat 20px 20px;
-  *background:#FFF url(../images/stepnum.gif) no-repeat 20px 17px;
+  background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px 20px;
+  *background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px 17px;
 }
 
 .step2 {
-  background:#FFF url(../images/stepnum.gif) no-repeat 20px -80px;
-  *background:#FFF url(../images/stepnum.gif) no-repeat 20px -83px;
+  background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px -80px;
+  *background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px -83px;
 }
 
 .step3 {
-  background:#FFF url(../images/stepnum.gif) no-repeat 20px -180px;
-  *background:#FFF url(../images/stepnum.gif) no-repeat 20px -183px;
+  background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px -180px;
+  *background:#FFF url(http://www.doudoufei.top/shops/admin/images/stepnum.gif) no-repeat 20px -183px;
 }
 
 .step1 em, .step2 em, .step3 em{
@@ -591,13 +591,13 @@ em, cite, th {
   display:block;
   padding-left:50px;
   line-height:30px;
-  background:url(../images/filecheck.gif) no-repeat -260px -50px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -260px -50px;
   font-weight:700;
   font-size:14px;
   color:#2366A8;
 }
 .left .ofolder{
-  background:url(../images/filecheck.gif) no-repeat -260px -100px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -260px -100px;
   color:#2366A8;
   font-size:14px;
 }
@@ -606,34 +606,34 @@ em, cite, th {
 }
 .files{
   padding:1px 0 1px 50px;
-  background:url(../images/filecheck.gif) no-repeat -260px -150px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -260px -150px;
 }
 .del{
   padding-left:18px;
-  background:url(../images/filecheck.gif) no-repeat 0 -285px;
-  *background:url(../images/filecheck.gif) no-repeat 0 -286px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat 0 -285px;
+  *background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat 0 -286px;
   color:#E8594D;
 }
 .edited{
   padding-left:18px;
-  background:url(../images/filecheck.gif) no-repeat -100px -385px;
-  *background:url(../images/filecheck.gif) no-repeat -100px -386px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -100px -385px;
+  *background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -100px -386px;
   color:#E8594D;
 }
 .unknown{
   padding-left:18px;
-  background:url(../images/filecheck.gif) no-repeat -50px -435px;
-  *background:url(../images/filecheck.gif) no-repeat -50px -436px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -50px -435px;
+  *background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat -50px -436px;
   color:#6189B8;
 }
 .correct{
   padding-left:18px;
-  background:url(../images/filecheck.gif) no-repeat 0 -485px;
-  *background:url(../images/filecheck.gif) no-repeat 0 -486px;
+  background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat 0 -485px;
+  *background:url(http://www.doudoufei.top/shops/admin/images/filecheck.gif) no-repeat 0 -486px;
   color:#70B759;
 }
 .tb2 th, .tb2 td {
-  background:transparent url(../images/bg_repx.gif) repeat-x scroll 0 bottom;
+  background:transparent url(http://www.doudoufei.top/shops/admin/images/bg_repx.gif) repeat-x scroll 0 bottom;
   padding:5px 5px 5px 0;
   text-align:left;
 }
@@ -660,7 +660,7 @@ em, cite, th {
     border-radius: 3px;
 }
 #footer{
-	background: #f3f3f3 url(../images/th_bg.gif) repeat-x;
+	background: #f3f3f3 url(http://www.doudoufei.top/shops/admin/images/th_bg.gif) repeat-x;
     border: 1px solid #ddd;
     padding: 15px;
     color: #9CACAF;

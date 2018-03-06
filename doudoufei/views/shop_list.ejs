@@ -18,11 +18,11 @@
 		     	  	  	<span class="active_span3"><img src="http://www.doudoufei.top/shops/admin/images/jnsy.png" alt="" /></span>
 		     	  	  	<span class="active_span4"><a href="">添加新商品</a></span>
 		     	  	  </h1>
-				<form id="form_del" action="/api/goods_search" method="post" enctype="multipart/form-data">
+				<!--<form id="form_del" action="/api/goods_search" method="post" enctype="multipart/form-data">-->
 					关键字
 					<input type="text" name="keyword" size="15" class="txt">
 					<input type="submit" value=" 搜索 " class="button" onclick="search()">
-				</form>
+				<!--</form>-->
 				<div class="list_div">
 					<table border="" cellspacing="1" cellpadding="3">
 						<tr>
@@ -80,7 +80,7 @@
 								<a href="" title="查看"><img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif" width="21" height="21" border="0" /></a>
 								<a href="" title="编辑"><img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif" width="21" height="21" border="0" /></a>
 								<a href="" title="复制"><img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif" width="21" height="21" border="0" /></a>
-								<a href="" title="回收站"><img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" width="21" height="21" border="0"  /></a>
+								<a href="javaScript:;" title="回收站"><img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" width="21" height="21" border="0"  /></a>
 							</td>
 
 						</tr>
@@ -91,19 +91,19 @@
 							<td align="right" nowrap="true">
 								 <!--$Id: page.htm 14216 2008-03-10 02:27:21Z testyang $--> 
 								<div id="turn-page">
-									总计 <span id="totalRecords"></span> 
-									个记录分为 
-									<span id="totalPages">1</span> 
-									页当前第 <span id="pageCurrent"></span> 页，每页 
-									<input type='text' size='3' id='pageNo' value="" />
+									总计 <span id="totalRecords"><input type="text" id='pageNo' value="" onblur="server"/></span> 
+									个记录&nbsp;&nbsp;&nbsp;分
+									<span id="totalPages"><input type="text" value="" id='pageNo' onblur="server"/></span> 
+									页&nbsp;&nbsp;&nbsp;当前第 <span id="pageCurrent">1</span> 页，每页 
+									<input type='text' size='3' id='pageNo' value="" onblur="server"/>&nbsp;&nbsp;&nbsp;
 									<span id="page-link">
 										
 								          <a href="/shop_list?pageNo=<%= 1 %>">第一页</a>
 								          <% if(pageNo>1) {%>
-								          	  <a href="/shop_list?pageNo=<%= pageNo-1 %>&count=<%= 5 %>">上一页</a>
+								          	  <a href="/shop_list?pageNo=<%= pageNo-1 %>&count=<%= count %>">上一页</a>
 								          <% } %>
 								          <a href="/shop_list?pageNo=<%= pageNo+1 %>&count=<%= count %>">下一页</a>
-								          <a href="/shop_list?pageNo=<%=  %>count=<% 5 %>">最末页</a>
+								          <a href="">最末页</a>
                                           <select>
                                                <option value='1'>1</option>
                                                <option value='1'>2</option>
@@ -140,8 +140,10 @@
 				goodsId : goodsId
 			},
 			success : function(res){
+				alert(res);
 			    if(res.status == 1){
-					location.reload(true);//删除之后 页面刷新；			    	
+			    	alert(1);
+//					location.reload(true);//删除之后 页面刷新；			    	
 			    
 				}else{
 					alert(res.message);
@@ -152,7 +154,26 @@
 	}
 	
 	//查询
-	function search(){
-		document.getElementById("form_del").submit();
+	function search(keyword){
+		$.ajax({
+			url:'/api/goods_search',
+			type:"get",
+			data:{
+				keyword : $(".txt").val()
+			},
+			success : function(res){
+				console.log(res
+				);
+				if( res.status == 1 ){
+					console.log("查找成功");
+				}else{
+					alert(res.message);
+				}
+			}
+		})
+	}
+	//分页
+	function (){
+		
 	}
 </script>
